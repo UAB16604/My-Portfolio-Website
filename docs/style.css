@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fbf6e6;
+    background-color: #55679C;
+}
+
+header {
+    background-color: #1E2A5E;
+    color: #fbf6e6;
+    box-shadow: 0 8px 30px #202a5a;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+div.right a {
+    text-decoration: none;
+    font-size: larger;
+    color: #fbf6e6;
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 50px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fbf6e6;
+    font-size: small;
+    font-weight: 600;
+}
+
+.home {
+    color: #7C93C3;
+}
+
+nav ul li a:hover {
+    color: #7C93C3;
+    font-size: 14px;
+}
+
+section {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+section div.leftsection {
+    font-size: xx-large;
+
+    width: 450px;
+    margin-top: 75px;
+}
+
+section div.rightsection img {
+    width: 300px;
+}
+
+.name {
+    font-size: 47px;
+    font-weight: 700;
+    color: #FFDB00;
+}
+
+#element {
+    color: #FFDB00;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.socialMedia a {
+    color: #1E2A5E;
+    text-decoration: none;
+    background: transparent;
+    margin-right: 20px;
+
+}
+
+.socialMedia a:hover {
+    color: #bbc5db;
+    text-shadow: 2.5px 2.5px 15px, -2.5px -2.5px 15px;
+}
+
+article {
+    background-color: #1e2a5e4d;
+    width: 90%;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+div.container-about h1 {
+    font-weight: 700;
+    font-size: 38px;
+    color: #FFDB00;
+    text-align: center;
+}
+
+div.container-about h3 {
+    color: #1E2A5E;
+    margin-bottom: 5px;
+    font-size: x-large;
+}
+
+div.container-about p {
+
+    margin-bottom: 12px;
+    width: 900px;
+    text-align: justify;
+}
+
+div.container-about ul li {
+    margin-left: 17px;
+}
+
+div.container-projects h1 {
+    font-weight: 700;
+    font-size: 38px;
+    color: #FFDB00;
+    text-align: center;
+}
+
+div.container-projects h3 {
+    color: #1E2A5E;
+    margin-bottom: 5px;
+    font-size: x-large;
+}
+
+div.container-projects p {
+
+    margin-bottom: 12px;
+    width: 900px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #1E2A5E;
+    box-shadow: 0 -8px 30px #202a5a;
+    padding: 30px 0;
+    width: 100%;
+    /* Ensure full width */
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 50px;
+
+}
+
+.contact {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    /* Ensure contact section spans the full width */
+
+    color: #fbf6e6;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px;
+        
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        font-size: smaller;
+    }
+
+    div.right a {
+        font-size: medium;
+    }
+
+
+    section {
+        flex-direction: column;
+        margin-top: 155px;
+        width: 90%;
+    }
+
+    section div.leftsection {
+        font-size: large;
+        text-align: center;
+        width: 100%;
+    }
+
+    section div.rightsection {
+        display: none;
+    }
+
+    div.container-about p,
+    div.container-projects p {
+        width: 100%;
+    }
+
+    .socialMedia {
+        flex-direction: row;
+
+        padding-top: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    article {
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+
+        bottom: 0;
+        right: 0;
+
+    }
+
+    .contact div {
+        margin: 5px 0;
+        font-size: 12px;
+        position: relative;
+    }
+}
